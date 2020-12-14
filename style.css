@@ -1,0 +1,436 @@
+header{
+    position: sticky;
+    display: inline-block;
+    text-align: right;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    font-size: 30px;
+    width: 100%;
+    min-width: 300px;
+    background-color: teal;
+    padding:10px;
+    padding-top: 5px;
+}
+
+header a{
+    text-align: right;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.nav-bar{
+    text-align: right;
+    border: white;
+    border-width: 1px;
+    align-content: center;
+    position: relative;
+    display: inline-block;
+    margin-left: 120px;
+}
+
+.nav-name{
+    text-align: left;
+    border: white;
+    border-width: 1px;
+    align-content: left;
+    position: absolute;
+    margin-left: 5px;
+}
+
+.nav-bar .nav-button{
+    display: inline-block;
+    padding-inline: 20px;
+    text-align: center;
+}
+
+html {
+    background-color: #033232;
+    vertical-align: middle;
+    justify-items: center;
+    font-family: sans-serif;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a{
+    color: inherit;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-text{
+    text-align: center;
+}
+.inline{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.bottom-space{
+    margin-bottom: 10px;
+}
+
+.project-block{
+    background-color: #0A1045;
+    box-shadow: gray 0 0 20px;
+    margin: 0 auto;
+    width: 1000px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom{
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+.project-column{
+    max-width: 50%;
+    min-width: 40%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.project-column img{
+    max-width: 48%;    
+    margin: 2px;
+}
+
+.project-column p{
+    margin: 0;
+}
+
+.project-title{
+    font-size: 50px;
+    padding: 10px;
+}
+
+.project-subtitle{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.project-icon{
+    max-height: 150px;
+    width: 50%;
+}
+
+.project-video{
+    max-height: 130px;
+    width: 48%;
+    margin-top: 0px;
+}
+
+/*.project-description{
+    
+}*/
+
+article iframe{
+    margin-top: 10px;
+}
+
+.project-grid{
+    margin: 0 auto;
+    width: 1003px;
+}
+
+.project-grid-box{
+    position: relative;
+    width: 499px;
+    height: 350px;
+    margin: 8px;
+    overflow: hidden;
+}
+
+.project-grid-box:hover{
+    cursor: pointer;
+}
+
+.project-grid-box .img-hover{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.25s linear; 
+    transition: visibility 0s, opacity 0.25s linear;
+}
+
+.project-grid-box:hover .img-hover{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    opacity: 0.9;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-hover{
+    font-size: 30px;
+    text-align: center;
+}
+
+.img-hover .title{
+    opacity: 1;
+    font-size: 50px;
+}
+
+.wide img{
+    max-width: 100%;
+}
+
+.tall img{
+    max-height: 100%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+#generic-modal{
+    display: none;
+    z-index: 2; /* Sit above specific modals */
+}
+
+#generic-image{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#generic-description{
+    font-size: 40px;
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.about-block{
+    margin: 0 auto;
+    max-width: 1000px;
+    min-width: 300px;
+    margin-bottom: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.no-deco-color{    
+    color: inherit;
+}
+.no-deco-line{
+    text-decoration: none;
+}
+.no-deco{
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog-block{
+    background-color: rgb(36, 86, 109);
+    margin: 0 auto;
+    width: 800px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.blog-title{
+    font-size: 30px;
+}
+
+.blog-image{
+    overflow: hidden;
+    margin-left: 100px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.blog-content img{
+    max-width: 80%;
+    overflow: hidden;
+}
+
+.blog-content p{
+    margin-top: 20px;
+}
+
+.about-me{
+    margin: 0 auto;
+    max-width: 1000px;
+    min-width: 500px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.about-name{
+    font-size: 50px;
+    padding: 10px;
+}
+
+#resume{
+    width: 580px;
+    height: 480px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-column-left{
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+.about-column-right{
+    margin: 0 auto;
+    width: 35%;
+}
+
+.about-skills{
+    margin: 0 auto;
+}
+
+.about-window{
+    background-color: rgb(36, 86, 109);
+    color: whitesmoke;
+}
+
+.skill-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.portrait{
+    margin: 10px;
+    max-width: 20%;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#minesweeper-settings{
+    border: solid whitesmoke 2px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.minesweeper-difficulty{
+    margin: 5px;
+    margin-bottom: 2px;
+    display: inline;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 24px;
+}
+
+.minesweeper-background{
+    background-color: #222222;
+    vertical-align: middle;
+    justify-items: center;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+#minesweeper-board{
+    margin: 0 auto;
+    vertical-align: middle;
+    justify-items: center;
+    display: grid;
+    max-width: 1110px;
+    align-content: center;
+    grid-template-columns: repeat(8,35px);
+    grid-template-rows: repeat(8,35px);
+    column-gap: 2px;
+    row-gap: 2px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+#minesweeper-board div{
+    outline: none;
+    user-select: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.minesweeper-tile{
+    max-width: 35px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    outline: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+    -webkit-user-drag: none;
+}
+
